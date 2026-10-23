@@ -159,7 +159,7 @@ const convertWordToEmoji = (word) => {
 	} else if (isValidWord && hasDotInside) {
 		return `${tp[wordLC]["emoji"]}. `;
 	} else {
-		return "Error";
+		return;
 	}
 };
 
