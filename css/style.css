@@ -50,6 +50,7 @@ body {
   opacity: 0.2;
   position: absolute;
   width: 200px;
+  z-index: 0;
 }
 .bg-icon--pona {
   bottom: 2em;
@@ -68,6 +69,8 @@ body {
 }
 
 .translate-box {
+  position: relative;
+  z-index: 100;
   display: grid;
   grid-template-rows: 1fr;
   background-color: #222;
@@ -89,4 +92,8 @@ body {
 
 textarea {
   resize: vertical;
+}
+
+.title {
+  position: relative;
 }/*# sourceMappingURL=style.css.map */
