@@ -9,7 +9,26 @@
 </head>
 
 <body>
-    <h1>test</h1>
+    <div class="container">
+        <div class="bg-icons">
+            <img class="bg-icon bg-icon--pona" src="./img/icons/sp_pona.svg">
+            <img class="bg-icon bg-icon--sitelen" src="./img/icons/sp_sitelen.svg">
+            <img class="bg-icon bg-icon--toki" src="./img/icons/sp_toki.svg">
+        </div>
+        <h1>ijo pi sitelen mute</h1>
+        <h2>ni li ante e sitelen</h2>
+        <div class="translate-box">
+            <textarea class="translate-box__textarea" name="Input for translator" id="translateInput" placeholder="o sitelen e ijo lon ni..."></textarea>
+            <select class="translate-box__dropdown-menu" name="Convert" id="converterSelector">
+                <option class="translate-box__dropdown-option" value="emojiToLatin">Emoji to Latin</option>
+                <option class="translate-box__dropdown-option" value="latinToEmoji">Latin to Emoji</option>
+            </select>
+        </div>
+        <div class="translate-box">
+            <textarea class="translate-box__textarea" name="Output for translator" id="translateOutput"
+                readonly placeholder="...kin la. sitelen ante li kama lon ni"></textarea>
+        </div>
+    </div>
 
     <script src="./js/main.js"></script>
 </body>

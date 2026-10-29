@@ -207,9 +207,31 @@ const emojiToLatin = (emojiText) => {
 	return latinText;
 };
 
+const handleTranslate = () => {
+	const type = converterSelector.value;
+	const textToTranslate = translateInput.value;
+	let translatedText;
+	switch (type) {
+		case "emojiToLatin":
+			translatedText = emojiToLatin(textToTranslate);
+			break;
+		case "latinToEmoji":
+			translatedText = latinToEmoji(textToTranslate);
+			break;
+		default:
+			console.error("Error");
+			break;
+	}
+	translateOutput.value = translatedText;
+};
+
 // Source - https://stackoverflow.com/a/71619350
 // Posted by rootEnginear, modified by community. See post 'Timeline' for change history
 // Retrieved 2026-10-17, License - CC BY-SA 4.0
 
 const splitEmoji = (string) =>
 	[...new Intl.Segmenter().segment(string)].map((x) => x.segment);
+
+//
+
+translateInput.addEventListener("keyup", handleTranslate);

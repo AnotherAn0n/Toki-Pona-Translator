@@ -1,0 +1,16 @@
+@keyframes rotateClockwise {
+	from {
+		rotate: 0;
+	}
+	to {
+		rotate: 360deg;
+	}
+}
+@keyframes rotateCounterClockwise {
+	from {
+		rotate: 0;
+	}
+	to {
+		rotate: -360deg;
+	}
+}
