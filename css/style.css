@@ -29,6 +29,7 @@ body {
   position: relative;
   background-color: #232222;
   font-size: 2rem;
+  font-family: sans-serif;
   min-height: 100vh;
   overflow: hidden;
 }
